@@ -51,6 +51,7 @@ const UserPage = () => {
     return(
         <div className="userPage">
             <button onClick={() => setNew(!newuser)} className="setuser"><h2>wanna, {newuser? "signup" : "login"} ?</h2></button>
+            <p>{newuser? "login page it is" : "sign-up page it is"}</p>
             <form>
                 <input type="text" placeholder="company name" value={company} onChange={e => setCompany(e.target.value)}/>
                 <input type="password" placeholder="organisation password" value={password} onChange={e => setPassword(e.target.value)}/>

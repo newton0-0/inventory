@@ -6,17 +6,12 @@ const product = new mongoose.Schema({
         required: true
     },
     price: {
-        type: Number,
+        type: String,
         required: true
     },
     featured: {
         type: Boolean,
         default: false
-    },
-    rating: {
-        type: Number,
-        maximum: 50,
-        default: 0
     },
     company: {
         type: String,

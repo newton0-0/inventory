@@ -50,7 +50,7 @@ route.post('/login-user', async(req, res) => {
     }
 })
 route.post('/new-product', async(req, res) => {
-    const { name, price, featured, rating, company, auth } = req.body
+    const { name, price, featured, company, auth } = req.body
     const product = { name, price, featured, rating, company }
 
     try {
